@@ -54,7 +54,7 @@ var config = {
     ]
   },
   devServer: {
-    // compress: true,
+    compress: true,
     contentBase: BUILD_DIR,
     port: 8000
     // headers: {},
