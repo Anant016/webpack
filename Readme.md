@@ -15,6 +15,12 @@
 - babel-core -- @babel/core
 - @babel/cli
 
+- css-loader
+- file-loader
+- image-webpack-loader
+- style-loader
+- sass-loader
+
 ### ()
 
 - react react-dom
