@@ -58,7 +58,7 @@ var config = {
     contentBase: BUILD_DIR,
     port: 8000,
     headers: {},
-    // disableHostCheck: false,
+    disableHostCheck: false,
     open: true,
     hot: true
   },
