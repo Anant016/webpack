@@ -36,7 +36,7 @@ var config = {
         options: {
           babelrc: false,
           presets: ["@babel/preset-env", "@babel/preset-react"],
-          plugins: ["syntax-dynamic-import"]
+          plugins: ["@babel/syntax-dynamic-import"]
         }
       },
       {
@@ -54,13 +54,13 @@ var config = {
     ]
   },
   devServer: {
-    compress: true,
+    // compress: true,
     contentBase: BUILD_DIR,
-    port: 8000,
-    headers: {},
-    disableHostCheck: false,
-    open: true,
-    hot: true
+    port: 8000
+    // headers: {},
+    // disableHostCheck: false,
+    // open: true,
+    // hot: true
   },
   plugins: [
     new htmlWebpackPlugin({
