@@ -56,11 +56,11 @@ var config = {
   devServer: {
     compress: true,
     contentBase: BUILD_DIR,
-    port: 8000
-    // headers: {},
+    port: 8000,
+    headers: {},
     // disableHostCheck: false,
-    // open: true,
-    // hot: true
+    open: true,
+    hot: true
   },
   plugins: [
     new htmlWebpackPlugin({
