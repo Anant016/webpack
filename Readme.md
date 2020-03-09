@@ -22,10 +22,11 @@
 - sass-loader
 
 - webpack-dev-server
+- babel-plugin-syntax-dynamic-import
 
 ### ()
 
-- react react-dom
+- react react-dom react-router-dom react-loadable
 
 ```
 npm i --save-dev webpack @babel/core @babel/preset-react babel-loader babel-plugin-lodash babel-plugin-react-transform  @babel/cli @babel/preset-env

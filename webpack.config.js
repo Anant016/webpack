@@ -31,7 +31,13 @@ var config = {
         test: /\.(js|jsx)$/,
         //   include: APP_DIR,
         exclude: /node_modules/,
-        use: "babel-loader"
+        // use: "babel-loader"
+        loader: "babel-loader",
+        options: {
+          babelrc: false,
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+          plugins: ["syntax-dynamic-import"]
+        }
       },
       {
         test: /\.css$/,
@@ -60,7 +66,10 @@ var config = {
     new htmlWebpackPlugin({
       template: "index.html"
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+    })
     // new webpack.optimize.CommonsChunkPlugin({
     //   names: ["vendor", "manifest"]
     // })
