@@ -22,7 +22,8 @@
   },
   "scripts": {
     "build": "SET NODE_ENV=production && rimraf dist && webpack -p",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "deploy-gh": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "react": "^16.13.0",

@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={{ fontFamily: "cursive" }}>React</h1>
+        <h1 style={{ fontFamily: "cursive" }}>Webpack</h1>
 
         <img src="./e.jpg" height="100px" />
       </div>
