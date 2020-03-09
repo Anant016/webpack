@@ -21,6 +21,8 @@
 - style-loader
 - sass-loader
 
+- webpack-dev-server
+
 ### ()
 
 - react react-dom

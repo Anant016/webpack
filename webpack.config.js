@@ -23,7 +23,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     // filename: "app.bundle.js"
-    filename: "[name].js"
+    filename: "[name].[hash].js"
   },
   module: {
     rules: [
@@ -47,10 +47,20 @@ var config = {
       }
     ]
   },
+  devServer: {
+    compress: true,
+    contentBase: BUILD_DIR,
+    port: 8000,
+    headers: {},
+    disableHostCheck: false,
+    open: true,
+    hot: true
+  },
   plugins: [
     new htmlWebpackPlugin({
       template: "index.html"
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
     // new webpack.optimize.CommonsChunkPlugin({
     //   names: ["vendor", "manifest"]
     // })

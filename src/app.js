@@ -7,7 +7,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        React
+        <h1 style={{ fontFamily: "cursive" }}>React</h1>
+
         <img src="./e.jpg" height="100px" />
       </div>
     );
