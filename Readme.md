@@ -1,4 +1,4 @@
-## SPA using webpack
+### SPA using webpack
 
 -Doesn't request server for each page, instead frameworks handle user interactivity.
 
